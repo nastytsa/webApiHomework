@@ -6,7 +6,8 @@ import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
 
 import java.io.*;
-
+// тести працюють, якщо запускати їх окремо в послідовності upload -> get metadata -> delete
+// чомусь при запуску цілого класу файл не створюється, хоча перший тест проходить
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestApi {
 
