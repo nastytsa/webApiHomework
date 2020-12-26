@@ -36,7 +36,6 @@ public class TestApi {
                 .body(FileUtils.readFileToByteArray(file))
                 .when().post("https://content.dropboxapi.com/2/files/upload")
                 .then().statusCode(200);
-        Thread.sleep(5000);
     }
 
     @Test
